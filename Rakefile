@@ -1,7 +1,7 @@
 Bundler.require
 require 'opal/rspec/runner'
 
-task 'opal:spec' do
+task :default do
   ENV['CHROME_OPTS'] ||= '--no-sandbox'
   ENV['SPEC_OPTS'] ||= '--format documentation --color'
   runner = ::Opal::RSpec::Runner.new do |_server, task|
