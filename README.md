@@ -32,3 +32,12 @@ Versions:
 - Chrome 111.0.5563.64 (latest at the time?)
 
 Searching for this error message online a bit, I found some people using the CDP interface with a similar message. I am not familiar enough with this code to be able to debug it however, so I'm just mentioning it.
+
+----
+
+For help, I am including a Dockerfile.
+```
+$ docker build -t opal-rspec .
+$ docker run -it opal-rspec
+# bundle exec rake
+```
